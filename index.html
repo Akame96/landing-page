@@ -32,7 +32,7 @@
                         <a class="nav-link text-light" href="#about">Chi Siamo</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a class="nav-link text-light" href="#services">Servizi</a>
+                        <a class="nav-link text-light" href="#servizi">Servizi</a>
                     </li>
                     <li class="nav-item mx-3">
                         <a class="nav-link text-light" href="#menu">Menù</a>
@@ -49,44 +49,64 @@
     </nav>
 
     <!-- Sezione Hero -->
-    <section id="Home" class="vh-100 d-flex align-items-center justify-content-center bg-dark text-white text-center">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <section id="Home" class="vh-100 d-flex align-items-center justify-content-center text-white text-center bg-light">
+        <div id="carouselExampleIndicators" class="carousel slide w-100 d-none d-md-block" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/images/Scott-Bar-COVER.jpg" class="d-block w-100" alt="1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Benvenuti al Lounge Bar Chillout</h1>
-                        <h3>Il posto perfetto per rilassarti e gustare i migliori cocktail.</h3>
+                    <div class="position-relative">
+                        <img src="/images/Scott-Bar-COVER.jpg" class="d-block w-100" alt="1" style="filter: blur(2px);">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100" style="backdrop-filter: blur(2px);">
+                            <h1>Benvenuti al Lounge Bar Chillout <br>
+                            Il posto perfetto per rilassarti e gustare i migliori cocktail.</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/immagine principale.png" class="d-block w-100" alt="2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Scopri i nostri eventi speciali!</h1>
-                        <h3>Un'esperienza unica per ogni occasione.</h3>
+                    <div class="position-relative">
+                        <img src="/images/immagine principale.png" class="d-block w-100" alt="2" style="filter: blur(2px);">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100" style="backdrop-filter: blur(2px);">
+                            <h1>Scopri i nostri eventi speciali! <br>
+                            Un'esperienza unica per ogni occasione.</h1>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/images/copertina-cocktail-bar-milano.jpg" class="d-block w-100" alt="3">
+                    <div class="position-relative">
+                        <img src="/images/copertina-cocktail-bar-milano.jpg" class="d-block w-100" alt="3" style="filter: blur(2px);">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center h-100" style="backdrop-filter: blur(2px);">
+                            <h1>Un'esperienza unica nel cuore di Benevento</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <!-- Immagine fissa per dispositivi mobili -->
+        <div class="d-block d-md-none">
+            <div class="top-0 start-50 text-center text-dark">
+                <h1 class="py-5">Benvenuti al Lounge Bar Chillout </h1>
+            </div>
+            <img src="/images/Scott-Bar-COVER.jpg" class="img-fluid" alt="1">
+            <h1 class="text-dark py-5">Scopri i nostri eventi speciali!</h1>
+                <h1 class="text-dark">Un'esperienza unica per ogni occasione
+            nel cuore di Benevento!</h1>
+        </div>
+
     </section>
 
 
+
+
     <!-- Sezione Chi Siamo -->
-    <!-- chi siamo -->
-    <section id="about" class="py-5 bg-light">
+    <section id="about" class="bg-light py-5">
         <div class="container">
             <h2 class="text-center py-5 fw-bold">Chi Siamo</h2>
 
@@ -173,8 +193,9 @@
     </section>
 
 
+
     <!-- Sezione Servizi -->
-    <section id="services" class="py-5 bg-light">
+    <section id="servizi" class="py-5 bg-light">
         <div class="container">
             <h2 class="text-center py-5 fw-bold">I Nostri Servizi</h2>
             <div class="row">
@@ -375,10 +396,17 @@
             </div>
             <div class="text-center mt-4">
                 <h5 class="fw-bold">Seguici sui social</h5>
-                <a href="#" class="btn btn-outline-primary m-3">Facebook</a>
-                <a href="#" class="btn btn-outline-danger m-3">Instagram</a>
-                <a href="#" class="btn btn-outline-info m-3">Twitter</a>
+                <a href="#" class="btn btn-outline-primary m-3">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="#" class="btn btn-outline-danger m-3">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="#" class="btn btn-outline-info m-3">
+                    <i class="bi bi-x-lg"></i> Twitter
+                </a>
             </div>
+
         </div>
     </section>
 
@@ -393,6 +421,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 
 </body>
 
